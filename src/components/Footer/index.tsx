@@ -1,36 +1,29 @@
-import { useIntl } from 'umi';
 import { GithubOutlined } from '@ant-design/icons';
 import { DefaultFooter } from '@ant-design/pro-layout';
 
 const Footer: React.FC = () => {
-  const intl = useIntl();
-  const defaultMessage = intl.formatMessage({
-    id: 'app.copyright.produced',
-    defaultMessage: '蚂蚁集团体验技术部出品',
-  });
-
+  const defaultMessage = 'HAUT yusixian';
   const currentYear = new Date().getFullYear();
-
   return (
     <DefaultFooter
       copyright={`${currentYear} ${defaultMessage}`}
       links={[
         {
-          key: 'Ant Design Pro',
-          title: 'Ant Design Pro',
-          href: 'https://pro.ant.design',
+          key: 'easy-mooc-maker',
+          title: '易慕课',
+          href: 'https://github.com/yusixian/easy-mooc-maker',
           blankTarget: true,
         },
         {
           key: 'github',
           title: <GithubOutlined />,
-          href: 'https://github.com/ant-design/ant-design-pro',
+          href: 'https://github.com/yusixian/easy-mooc-maker',
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
-          title: 'Ant Design',
-          href: 'https://ant.design',
+          key: 'Ant Design Pro',
+          title: '使用 Ant Design Pro 进行搭建',
+          href: 'https://pro.ant.design',
           blankTarget: true,
         },
       ]}
