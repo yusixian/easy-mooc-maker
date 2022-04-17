@@ -1,0 +1,19 @@
+.homeBanner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 480px;
+  background-image: url(http://cdn.cosine.ren/img/a0ec10208eb24ee35a3d89e610d94d76.jpg);
+  background-size: cover;
+}
+.homeBanner::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 50px 20px #ffffff inset;
+  content: '';
+}

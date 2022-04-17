@@ -45,7 +45,7 @@ export default {
       success: true,
       data: {
         name: 'cosine',
-        avatar: 'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png',
+        avatar: 'https://cdn.jsdelivr.net/gh/yusixian/imgBed/img/tx.jpg',
         userid: '00000001',
         email: 'cosine_yu@qq.com',
         signature: '愿岁并谢，与友长兮',

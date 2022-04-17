@@ -44,7 +44,8 @@ const GlobalHeaderRight: React.FC = () => {
             label: <a href="https://prolayout.ant.design/">Pro Layout</a>,
             value: 'Pro Layout',
           },
-        ]} // onSearch={value => {
+        ]}
+        // onSearch={value => {
         //   console.log('input', value);
         // }}
       />
