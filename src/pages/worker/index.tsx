@@ -1,7 +1,7 @@
 /*
  * @Author: cos
  * @Date: 2022-04-28 13:45:13
- * @LastEditTime: 2022-04-28 17:37:25
+ * @LastEditTime: 2022-04-28 19:13:08
  * @LastEditors: cos
  * @Description: 工作台界面
  * @FilePath: \easy-mooc-maker\src\pages\worker\index.tsx
@@ -11,16 +11,17 @@ import React from 'react';
 import Title from '@/components/Title';
 import './index.less';
 import { Card, Empty } from 'antd';
+import { history } from 'umi';
 const OpList = [
   {
     title: '上传人像视频+PPT制作微课视频',
     desc: '上传绿幕人像视频和教学用ppt，系统将人像自动抠图并与ppt和微课模板合成微课。',
-    path: '/upload/both',
+    path: '/worker/upload',
   },
   {
     title: '自动识别添加字幕',
     desc: '已有完整微课视频，需要添加字幕',
-    path: '/upload/dcaption',
+    path: '/worker/caption',
   },
 ];
 const Worker: React.FC = () => {
@@ -34,6 +35,7 @@ const Worker: React.FC = () => {
           style={{
             cursor: 'pointer',
           }}
+          onClick={() => history.push(op.path)}
         >
           <div className="title">{op.title}</div>
           <div className="desc">{op.desc}</div>

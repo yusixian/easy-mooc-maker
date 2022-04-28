@@ -8,22 +8,12 @@ export default [
     ],
   },
   { path: '/welcome', name: '欢迎', icon: 'smile', component: './Welcome' },
-
   { path: '/worker', name: '工作台', component: './worker' },
   { path: '/manage', name: '微课管理', component: './manage' },
   { path: '/shared', name: '素材共享', component: './shared' },
-  //   {
-  //     path: '/admin',
-  //     name: '管理页',
-  //     icon: 'crown',
-  //     access: 'canAdmin',
-  //     component: './Admin',
-  //     routes: [
-  //       { path: '/admin/sub-page', name: '二级管理页', icon: 'smile', component: './Welcome' },
-  //       { component: './404' },
-  //     ],
-  //   },
-  //   { name: '查询表格', icon: 'table', path: '/list', component: './TableList' },
+
+  { path: '/worker/upload', name: '微课制作', component: './worker/upload', hideInMenu: true },
+  { path: '/worker/caption', name: '字幕添加', component: './worker/caption', hideInMenu: true },
 
   { path: '/', redirect: '/welcome' },
   { component: './404' },

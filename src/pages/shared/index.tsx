@@ -1,7 +1,7 @@
 /*
  * @Author: cos
  * @Date: 2022-04-28 13:08:07
- * @LastEditTime: 2022-04-28 17:00:47
+ * @LastEditTime: 2022-04-28 22:01:08
  * @LastEditors: cos
  * @Description: 素材共享界面
  * @FilePath: \easy-mooc-maker\src\pages\shared\index.tsx
@@ -42,7 +42,7 @@ const Shared: React.FC = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [pptList, setPPT] = useState(list);
   const onSearch = (value: string) => console.log(value);
-  const onChange = (pageNumber: Number) => {
+  const onChange = (pageNumber: number) => {
     console.log('Page: ', pageNumber);
   };
   return (
