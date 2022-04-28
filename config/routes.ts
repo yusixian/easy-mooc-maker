@@ -8,6 +8,10 @@ export default [
     ],
   },
   { path: '/welcome', name: '欢迎', icon: 'smile', component: './Welcome' },
+
+  { path: '/worker', name: '工作台', component: './worker' },
+  { path: '/manage', name: '微课管理', component: './manage' },
+  { path: '/shared', name: '素材共享', component: './shared' },
   //   {
   //     path: '/admin',
   //     name: '管理页',
@@ -20,6 +24,7 @@ export default [
   //     ],
   //   },
   //   { name: '查询表格', icon: 'table', path: '/list', component: './TableList' },
+
   { path: '/', redirect: '/welcome' },
   { component: './404' },
 ];
