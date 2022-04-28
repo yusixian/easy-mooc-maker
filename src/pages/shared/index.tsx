@@ -1,7 +1,7 @@
 /*
  * @Author: cos
  * @Date: 2022-04-28 13:08:07
- * @LastEditTime: 2022-04-28 22:01:08
+ * @LastEditTime: 2022-04-28 22:11:00
  * @LastEditors: cos
  * @Description: 素材共享界面
  * @FilePath: \easy-mooc-maker\src\pages\shared\index.tsx
@@ -13,8 +13,6 @@ const { Search } = Input;
 import React, { useState } from 'react';
 import styles from './index.less';
 import Menus from './Menus';
-
-getPPTList().then((data) => console.log(data));
 const menuItems = [
   {
     label: 'PPT模板',
@@ -40,7 +38,7 @@ const menuItems = [
 const list = await getPPTList();
 const Shared: React.FC = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [pptList, setPPT] = useState(list);
+  const [pptList] = useState(list);
   const onSearch = (value: string) => console.log(value);
   const onChange = (pageNumber: number) => {
     console.log('Page: ', pageNumber);
