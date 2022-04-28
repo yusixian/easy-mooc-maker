@@ -1,3 +1,11 @@
+/*
+ * @Author: cos
+ * @Date: 2022-04-16 23:12:01
+ * @LastEditTime: 2022-04-28 16:05:19
+ * @LastEditors: cos
+ * @Description:
+ * @FilePath: \easy-mooc-maker\src\services\ant-design-pro\api.ts
+ */
 // @ts-ignore
 /* eslint-disable */
 import { request } from 'umi';
@@ -56,6 +64,14 @@ export async function rule(
     params: {
       ...params,
     },
+    ...(options || {}),
+  });
+}
+
+/** 获取PPT列表 GET /api/list/ppt */
+export async function getPPTList(options?: { [key: string]: any }) {
+  return await request('/api/list/ppt', {
+    method: 'GET',
     ...(options || {}),
   });
 }
