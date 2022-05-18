@@ -3,7 +3,10 @@ export default [
     path: '/user',
     layout: false,
     routes: [
-      { path: '/user', routes: [{ name: '登录', path: '/user/login', component: './user/Login' }] },
+      {
+        path: '/user',
+        routes: [{ name: '登录', path: '/user/login', component: './user/Login' }],
+      },
       { component: './404' },
     ],
   },
@@ -12,6 +15,7 @@ export default [
   { path: '/manage', name: '微课管理', component: './manage' },
   { path: '/shared', name: '素材共享', component: './shared' },
 
+  { path: '/mine/center', name: '用户中心', component: './mine/center', hideInMenu: true },
   { path: '/worker/upload', name: '微课制作', component: './worker/upload', hideInMenu: true },
   { path: '/worker/caption', name: '字幕添加', component: './worker/caption', hideInMenu: true },
 

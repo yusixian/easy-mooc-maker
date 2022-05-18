@@ -1,3 +1,11 @@
+/*
+ * @Author: cos
+ * @Date: 2022-04-16 23:12:01
+ * @LastEditTime: 2022-05-17 21:47:22
+ * @LastEditors: cos
+ * @Description:
+ * @FilePath: \easy-mooc-maker\src\components\RightContent\index.tsx
+ */
 import { Space } from 'antd';
 import { QuestionCircleOutlined } from '@ant-design/icons';
 import React from 'react';
@@ -52,7 +60,7 @@ const GlobalHeaderRight: React.FC = () => {
       <span
         className={styles.action}
         onClick={() => {
-          window.open('https://pro.ant.design/docs/getting-started');
+          window.open('https://github.com/yusixian/easy-mooc-maker');
         }}
       >
         <QuestionCircleOutlined />

@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: stretch;
+  width: 100%;
+  padding: 2vmin 10vmin;
+  background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg');
+  background-repeat: no-repeat;
+  background-position: center 110px;
+  background-size: 100%;
+  .content {
+    display: flex;
+    flex-flow: wrap;
+    gap: 35px;
+    align-items: center;
+    justify-content: stretch;
+    height: auto;
+    padding: 20px 0;
+    .item {
+      cursor: pointer;
+      img {
+        max-width: 300px;
+        text-align: center;
+      }
+      .bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px;
+        color: #807e7e;
+        font-size: 20px;
+        line-height: 40px;
+        // vertical-align: middle;
+        background-color: white;
+        .title {
+          width: 70%;
+        }
+        .desc {
+          width: 30%;
+          text-align: right;
+        }
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+  }
+}

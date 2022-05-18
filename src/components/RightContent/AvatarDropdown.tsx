@@ -1,3 +1,11 @@
+/*
+ * @Author: cos
+ * @Date: 2022-04-16 23:12:01
+ * @LastEditTime: 2022-05-17 23:23:10
+ * @LastEditors: cos
+ * @Description:
+ * @FilePath: \easy-mooc-maker\src\components\RightContent\AvatarDropdown.tsx
+ */
 import React, { useCallback } from 'react';
 import { LogoutOutlined, SettingOutlined, UserOutlined } from '@ant-design/icons';
 import { Avatar, Menu, Spin } from 'antd';
@@ -30,7 +38,7 @@ const loginOut = async () => {
   }
 };
 
-const AvatarDropdown: React.FC<GlobalHeaderRightProps> = ({ menu }) => {
+const AvatarDropdown: React.FC<GlobalHeaderRightProps> = () => {
   const { initialState, setInitialState } = useModel('@@initialState');
 
   const onMenuClick = useCallback(
@@ -41,7 +49,7 @@ const AvatarDropdown: React.FC<GlobalHeaderRightProps> = ({ menu }) => {
         loginOut();
         return;
       }
-      history.push(`/account/${key}`);
+      history.push(`/mine/${key}`);
     },
     [setInitialState],
   );
@@ -70,20 +78,15 @@ const AvatarDropdown: React.FC<GlobalHeaderRightProps> = ({ menu }) => {
 
   const menuHeaderDropdown = (
     <Menu className={styles.menu} selectedKeys={[]} onClick={onMenuClick}>
-      {menu && (
-        <Menu.Item key="center">
-          <UserOutlined />
-          个人中心
-        </Menu.Item>
-      )}
-      {menu && (
-        <Menu.Item key="settings">
-          <SettingOutlined />
-          个人设置
-        </Menu.Item>
-      )}
-      {menu && <Menu.Divider />}
-
+      <Menu.Item key="center">
+        <UserOutlined />
+        个人中心
+      </Menu.Item>
+      <Menu.Item key="settings">
+        <SettingOutlined />
+        个人设置
+      </Menu.Item>
+      <Menu.Divider />
       <Menu.Item key="logout">
         <LogoutOutlined />
         退出登录

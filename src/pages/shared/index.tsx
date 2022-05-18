@@ -1,18 +1,18 @@
 /*
  * @Author: cos
  * @Date: 2022-04-28 13:08:07
- * @LastEditTime: 2022-04-28 22:11:00
+ * @LastEditTime: 2022-05-18 00:12:54
  * @LastEditors: cos
  * @Description: 素材共享界面
  * @FilePath: \easy-mooc-maker\src\pages\shared\index.tsx
  */
+import Menu from '@/components/Menu';
 import { getPPTList } from '@/services/ant-design-pro/api';
 import { EyeOutlined } from '@ant-design/icons';
 import { Input, Pagination } from 'antd';
 const { Search } = Input;
 import React, { useState } from 'react';
 import styles from './index.less';
-import Menus from './Menus';
 const menuItems = [
   {
     label: 'PPT模板',
@@ -46,7 +46,7 @@ const Shared: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <Menus defaultSelectedKeys="ppt-template" items={menuItems} />
+        <Menu defaultSelectedKeys="ppt-template" items={menuItems} />
         <Search
           size="large"
           placeholder="input search text"

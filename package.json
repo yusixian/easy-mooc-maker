@@ -1,6 +1,6 @@
 {
-  "name": "ant-design-pro",
-  "version": "5.2.0",
+  "name": "easy-mooc-maker",
+  "version": "1.0.0",
   "private": true,
   "description": "An out-of-box UI solution for enterprise applications",
   "scripts": {
@@ -95,6 +95,7 @@
     "lint-staged": "^10.0.0",
     "mockjs": "^1.1.0",
     "prettier": "^2.5.0",
+    "styled-components": "^5.3.5",
     "stylelint": "^13.0.0",
     "swagger-ui-react": "^3.52.0",
     "typescript": "^4.5.0",
